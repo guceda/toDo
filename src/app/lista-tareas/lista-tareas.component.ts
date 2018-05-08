@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lista-tareas',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-tareas.component.css']
 })
 export class ListaTareasComponent implements OnInit {
-
-  constructor() { }
+  @Input()tareas:any
+  constructor() {
+   }
 
   ngOnInit() {
+    
   }
 
 }

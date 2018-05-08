@@ -1,3 +1,4 @@
-<p>
-  lista-tareas works!
-</p>
+<div *ngFor= "let tarea of tareas">
+        <button type="button" class="btn btn-light">{{tarea.titulo}}</button>
+</div>
+

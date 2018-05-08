@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  arrayTareas:Array<object>
+  constructor(){
+    this.arrayTareas = []
+  }
+
+  handleOnSend($event){
+    this.arrayTareas.push($event)
+    console.log(this.arrayTareas); 
+  }
 }

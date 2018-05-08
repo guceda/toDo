@@ -1,17 +1,20 @@
 <form>
+  <div class="titulo">Añade una nueva tarea</div>
   <div class="form-row">
-    <div class=" titulo col-12">
-      <label for="inputEmail4">Título</label>
-      <input type="text" class="form-control" placeholder="Hacer caca">
+    <div class=" titulo col-10">
+      <input [(ngModel)] = "titulo" type="text" name="titulo" class="form-control" placeholder="Título" >
     </div>
+  </div>
     <div class="form-row">
-      <div class="texto col-12">
-        <label for="inputPassword4">Descripción</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+      <div class="texto col-10">
+       <textarea [(ngModel)] = "descripcion" name="descripcion" class="form-control" id="descripcion"  placeholder="Descripción" rows="4" ></textarea>
       </div>
     </div>
-
-
-  </div>
-  <button class="btn btn-secondary">Añadir</button>
+    <div class="form-row">
+      <div class="boton col-10">
+        <button (click) = "handleClick()" type="submit" class=" btn btn-secondary">Añadir</button>
+      </div>
+    </div>
+  
 </form>
+
