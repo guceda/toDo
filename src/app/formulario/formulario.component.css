@@ -1,0 +1,16 @@
+.titulo{
+    width:100%;
+    margin: 30px 0px;
+}
+.texto{
+    margin-left: 5px;
+}
+
+.texto textarea{
+    width:350px;
+    margin-bottom: 30px;
+}
+
+button{
+    width: 350px;
+}
