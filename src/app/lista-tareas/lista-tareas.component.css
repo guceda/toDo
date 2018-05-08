@@ -1,7 +1,32 @@
+
 .btn {
     width:80%;
     margin:10px  10%;
-    height: 80px;
-    
+    height: 100px; 
+    padding: 5px;
+    position: relative;
 }
 
+.hora{
+    font-size: 70%;
+}
+
+.titulo{ 
+    font-weight: 700;
+    font-size: 140%;
+}
+
+.descripcion{
+    font-size: 100%;
+    margin-top: 0px;
+    padding: 0 20px;
+
+}
+
+.interior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: -15px 5px 0 5px;  
+    padding: 10px;
+}
