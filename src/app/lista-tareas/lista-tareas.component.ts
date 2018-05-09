@@ -11,7 +11,7 @@ export class ListaTareasComponent implements OnInit {
    }
 
   ngOnInit() {
-    
   }
+ 
 
 }

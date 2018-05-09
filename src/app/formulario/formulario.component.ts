@@ -11,12 +11,15 @@ export class FormularioComponent implements OnInit {
   descripcion: string
   tarea: object
   hora: any
+  estado: boolean
+
 
   @Output()onSend:EventEmitter<any>
 
   constructor() {
-    this.hora = "11:30"
+    this.hora = new Date()
     this.tarea = {}
+    this.estado = false
     this.onSend = new EventEmitter()
   }
 
@@ -26,9 +29,12 @@ export class FormularioComponent implements OnInit {
     this.tarea = {
       titulo: this.titulo,
       descripcion: this.descripcion,
-      hora: this.hora
+      hora: this.hora,
+      estado: this.estado
     }
     console.log(this.tarea);
     this.onSend.emit(this.tarea)
+    console.log(this.tarea);
+    
   }
 }

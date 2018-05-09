@@ -16,4 +16,5 @@ export class AppComponent {
     this.arrayTareas.push($event)
     console.log(this.arrayTareas); 
   }
+
 }
