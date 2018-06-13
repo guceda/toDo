@@ -6,12 +6,17 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./lista-tareas.component.css']
 })
 export class ListaTareasComponent implements OnInit {
-  @Input()tareas:any
+  @Input() tareas: any
+  statusStyle: any
   constructor() {
-   }
+
+  }
 
   ngOnInit() {
   }
- 
-
+  handleClick(boton) {
+    boton.estado = !boton.estado
+    console.log(boton);
+    console.log(this.tareas);
+  }
 }

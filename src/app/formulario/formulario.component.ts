@@ -19,7 +19,7 @@ export class FormularioComponent implements OnInit {
   constructor() {
     this.hora = new Date()
     this.tarea = {}
-    this.estado = false
+    this.estado = true
     this.onSend = new EventEmitter()
   }
 

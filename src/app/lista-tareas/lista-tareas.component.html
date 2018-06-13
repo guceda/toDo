@@ -1,8 +1,8 @@
 <div class="contenedor col-12" *ngFor="let tarea of tareas">
-    <button type="button" class="btn btn-light">
+    <button (click) = "handleClick(tarea)" [ngStyle] = "statusStyle" type="button" class="btn btn-light">
         <div class="interior">
             <div class="titulo"> {{tarea.titulo}}</div>
-            <div class="hora">{{tarea.hora | date:'EEE d MMMM,  HH:mm'}}</div> 
+            <div class="hora">{{tarea.hora | date:'EEE d MMMM, HH:mm'}}</div>
         </div>
         <div class="descripcion">
             <div> {{tarea.descripcion}}</div>
@@ -10,4 +10,3 @@
     </button>
 
 </div>
-
